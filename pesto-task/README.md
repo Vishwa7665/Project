@@ -58,27 +58,26 @@ The project is structured as follows
 
 pesto-task/
 ├── backend/
-│   ├── controller/            # Contains controllers for handling business logic
-│   ├── middleware/            # Contains middleware functions
-│   ├── routes/                # Contains route definitions
-│   ├── database-schema/       # Contains database schema definitions
-│   ├── utils/                 # Contains utility functions
-│   ├── index.js               # Entry point for the backend application
-│   ├── .env                   # Environment variables configuration file
-│   └── ...                    # Other backend-related files and folders
+│ ├── controller/ # Contains controllers for handling business logic
+│ ├── middleware/ # Contains middleware functions
+│ ├── routes/ # Contains route definitions
+│ ├── database-schema/ # Contains database schema definitions
+│ ├── utils/ # Contains utility functions
+│ ├── index.js # Entry point for the backend application
+│ ├── .env # Environment variables configuration file
+│ └── ... # Other backend-related files and folders
 ├── frontend/
-│   ├── public/                # Public assets and HTML template
-│   ├── src/                   # Source code for the frontend application
-│   │   ├── components/        # Reusable UI components
-│   │   ├── authentication/    # Components and logic related to user authentication
-│   │   ├── pages/             # Components representing different pages/routes
-│   │   ├── App.tsx            # Main component file
-│   │   ├── index.tsx          # Entry point for the frontend application
-│   │   └── App.css            # Styles for the main component
-│   └── ...                    # Other frontend-related files and folders
-├── README.md                  # Project README file
-└── ...                        # Other project-related files and folders
-
+│ ├── public/ # Public assets and HTML template
+│ ├── src/ # Source code for the frontend application
+│ │ ├── components/ # Reusable UI components
+│ │ ├── authentication/ # Components and logic related to user authentication
+│ │ ├── pages/ # Components representing different pages/routes
+│ │ ├── App.tsx # Main component file
+│ │ ├── index.tsx # Entry point for the frontend application
+│ │ └── App.css # Styles for the main component
+│ └── ... # Other frontend-related files and folders
+├── README.md # Project README file
+└── ... # Other project-related files and folders
 
 ## Available Scripts
 
