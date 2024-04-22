@@ -1,30 +1,52 @@
+MIT License
+
+Copyright (c) [2024] [vISHVAJEET DESHMUKH]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
 # Task Management System
 
 This project is a simple task management system where users can register, login, view tasks, create new tasks, update task status, and logout.
 
-# Feature
+# Features
 
-# User Authentication
+### User Authentication
 
 Users can register with unique credentials and then login using the same credentials.
 
-# Dashboard
+### Dashboard
 
 Shows all the tasks created by the user.
 
-# Task Filtering
+### Task Filtering
 
 Users can filter tasks based on their status (To Do, Done, In Progress).
 
-# Task Details
+### Task Details
 
 Clicking on a task card reveals detailed information about the task, including options to change the status or delete the task.
 
-# Create Task
+### Create Task
 
 Users can add new tasks through a dedicated form.
 
-# Logout
+### Logout
 
 Users can log out of their account.
 
@@ -36,18 +58,18 @@ Node.js: Runtime environment for server-side code.
 Express.js: Web application framework for Node.js.
 express-session: Middleware for session management.
 
-# Versions
+### Versions
 
 Nodejs: 20.11.0
 npx: 10.2.4
 
-# Client
+### Client
 
 React.js: JavaScript library for building user interfaces.
 React Router: Declarative routing for React applications.
 It uses port 3000
 
-# Server
+### Server
 
 Backend is developed using expressjs version 4.19.2
 It uses port 3001
