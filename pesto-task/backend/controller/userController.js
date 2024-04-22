@@ -1,6 +1,7 @@
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const { UserCollection } = require("../database-schema/taskmanagementSchema");
+const { checkEmailValidity } = require("../utils/validity");
 
 const SECRET_KEY = process.env.SECRET_KEY;
 
@@ -112,7 +113,10 @@ const userLogin = async (req, res) => {
 const userRegister = async (req, res) => {
   try {
     let usrInfo = req.body;
-
+    let isValidEmail = checkEmailValidity(usrInfo.email);
+    if (!isValidEmail.status) {
+      res.status(400).json({ message: isValidEmail.message, status: false });
+    }
     if (usrInfo == undefined || !usrInfo.email || !usrInfo.password) {
       res
         .status(400)
