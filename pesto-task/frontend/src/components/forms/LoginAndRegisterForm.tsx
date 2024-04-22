@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { ChangeEvent, FormEvent } from "react";
+import { useNavigate } from "react-router-dom";
 
 interface LoginAndRegisterFormProps {
   handleChange: (e: ChangeEvent<HTMLInputElement>) => void;
@@ -14,6 +15,14 @@ export const LoginAndRegisterForm: React.FC<LoginAndRegisterFormProps> = ({
   formData,
   formType,
 }) => {
+  const navigate = useNavigate();
+  const navTo = () => {
+    if (formType === "Login") {
+      navigate("/register");
+    } else {
+      navigate("/login");
+    }
+  };
   return (
     <form onSubmit={handleSubmit}>
       <div className="form-group mt-4">
@@ -52,6 +61,13 @@ export const LoginAndRegisterForm: React.FC<LoginAndRegisterFormProps> = ({
         <button type="submit" className="btn btn-primary">
           {formType}
         </button>
+      </div>
+      <div className="mt-3" style={{ textAlign: "center" }}>
+        <a className="link-primary" type="button" onClick={navTo}>
+          {formType === "Login"
+            ? "Don't have an account, register"
+            : "Already have an account, login"}
+        </a>
       </div>
     </form>
   );
